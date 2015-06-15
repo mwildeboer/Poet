@@ -33,15 +33,6 @@
     self.backgroundView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"Doge"]];
     [self.view addSubview:self.backgroundView];
     
-    
-    NSAttributedString *string = [[NSAttributedString alloc] initWithString:@"Hello World" builder:^(NSTextAttributes *attributes)
-    {
-        attributes.font = [UIFont systemFontOfSize:16];
-        attributes.foregroundColor = [UIColor blueColor];
-        attributes.paragraphStyle.alignment = NSTextAlignmentCenter;
-        attributes.paragraphStyle.lineSpacing = 2.0;
-    }];
-    
     self.labelA = [[UILabel alloc] initWithFrame:CGRectZero];
     self.labelA.attributedText = [[NSAttributedString alloc] initWithString:@"Such text" builder:^(NSTextAttributes *attributes)
     {

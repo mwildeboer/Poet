@@ -63,6 +63,7 @@
 		DE9C44EA1B2F1E13001CB094 /* UIFont+ComicSans.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIFont+ComicSans.m"; sourceTree = "<group>"; };
 		DE9C44ED1B2F1E47001CB094 /* Comic Sans MS Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Comic Sans MS Bold.ttf"; sourceTree = "<group>"; };
 		DE9C44EE1B2F1E47001CB094 /* Comic Sans MS.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Comic Sans MS.ttf"; sourceTree = "<group>"; };
+		DE9C44F11B2F364F001CB094 /* Poet.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Poet.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,6 +106,7 @@
 		DE59256F1B25F209005BD3A7 /* Poet */ = {
 			isa = PBXGroup;
 			children = (
+				DE9C44F11B2F364F001CB094 /* Poet.h */,
 				DE40F3F91B25F4F6000BF45D /* NSAttributedString+Poet.h */,
 				DE40F3FA1B25F4F6000BF45D /* NSAttributedString+Poet.m */,
 				DE40F3F31B25F4D4000BF45D /* NSDictionary+Poet.h */,
