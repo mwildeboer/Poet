@@ -10,12 +10,24 @@
 
 @interface NSTextAttributes : NSObject
 
+@property (nonatomic, strong) UIColor                 *backgroundColor;
+@property (nonatomic, assign) CGFloat                  baselineOffset;
+@property (nonatomic, assign) CGFloat                  expansion;
 @property (nonatomic, strong) UIFont                  *font;
-@property (nonatomic, strong) NSNumber                *expansion;
 @property (nonatomic, strong) UIColor                 *foregroundColor;
-@property (nonatomic, strong) NSNumber                *kern;
+@property (nonatomic, assign) CGFloat                  kern;
+@property (nonatomic, assign) NSInteger                ligature;
+@property (nonatomic, strong) NSURL                   *link;
+@property (nonatomic, assign) CGFloat                  obliqueness;
 @property (nonatomic, strong) NSMutableParagraphStyle *paragraphStyle;
 @property (nonatomic, strong) NSShadow                *shadow;
+@property (nonatomic, strong) UIColor                 *strikethroughColor;
+@property (nonatomic, assign) NSInteger                strikethroughStyle;
+@property (nonatomic, strong) UIColor                 *strokeColor;
+@property (nonatomic, assign) CGFloat                  strokeWidth;
+@property (nonatomic, strong) NSString                *textEffect;
+@property (nonatomic, strong) UIColor                 *underlineColor;
+@property (nonatomic, assign) NSInteger                underlineStyle;
 
 - (NSDictionary *)dictionaryValue;
 

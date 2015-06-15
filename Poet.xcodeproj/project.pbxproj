@@ -23,6 +23,9 @@
 		DE5925EB1B25F3AE005BD3A7 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = DE5925DF1B25F306005BD3A7 /* main.m */; };
 		DE5925EC1B25F3B5005BD3A7 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DE5925DD1B25F306005BD3A7 /* Images.xcassets */; };
 		DE5925ED1B25F3B5005BD3A7 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = DE5925DB1B25F306005BD3A7 /* LaunchScreen.xib */; };
+		DE9C44EB1B2F1E13001CB094 /* UIFont+ComicSans.m in Sources */ = {isa = PBXBuildFile; fileRef = DE9C44EA1B2F1E13001CB094 /* UIFont+ComicSans.m */; };
+		DE9C44EF1B2F1E47001CB094 /* Comic Sans MS Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = DE9C44ED1B2F1E47001CB094 /* Comic Sans MS Bold.ttf */; };
+		DE9C44F01B2F1E47001CB094 /* Comic Sans MS.ttf in Resources */ = {isa = PBXBuildFile; fileRef = DE9C44EE1B2F1E47001CB094 /* Comic Sans MS.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,7 +39,6 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		DE40F3EF1B25F47A000BF45D /* Poet.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Poet.h; sourceTree = "<group>"; };
 		DE40F3F01B25F48B000BF45D /* NSTextAttributes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NSTextAttributes.h; sourceTree = "<group>"; };
 		DE40F3F11B25F48B000BF45D /* NSTextAttributes.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NSTextAttributes.m; sourceTree = "<group>"; };
 		DE40F3F31B25F4D4000BF45D /* NSDictionary+Poet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDictionary+Poet.h"; sourceTree = "<group>"; };
@@ -57,6 +59,10 @@
 		DE5925DF1B25F306005BD3A7 /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		DE5925E01B25F306005BD3A7 /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		DE5925E11B25F306005BD3A7 /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		DE9C44E91B2F1E13001CB094 /* UIFont+ComicSans.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIFont+ComicSans.h"; sourceTree = "<group>"; };
+		DE9C44EA1B2F1E13001CB094 /* UIFont+ComicSans.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIFont+ComicSans.m"; sourceTree = "<group>"; };
+		DE9C44ED1B2F1E47001CB094 /* Comic Sans MS Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Comic Sans MS Bold.ttf"; sourceTree = "<group>"; };
+		DE9C44EE1B2F1E47001CB094 /* Comic Sans MS.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Comic Sans MS.ttf"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,7 +105,6 @@
 		DE59256F1B25F209005BD3A7 /* Poet */ = {
 			isa = PBXGroup;
 			children = (
-				DE40F3EF1B25F47A000BF45D /* Poet.h */,
 				DE40F3F91B25F4F6000BF45D /* NSAttributedString+Poet.h */,
 				DE40F3FA1B25F4F6000BF45D /* NSAttributedString+Poet.m */,
 				DE40F3F31B25F4D4000BF45D /* NSDictionary+Poet.h */,
@@ -136,8 +141,11 @@
 				DE5925DA1B25F306005BD3A7 /* AppDelegate.m */,
 				DE5925E01B25F306005BD3A7 /* ViewController.h */,
 				DE5925E11B25F306005BD3A7 /* ViewController.m */,
+				DE9C44E91B2F1E13001CB094 /* UIFont+ComicSans.h */,
+				DE9C44EA1B2F1E13001CB094 /* UIFont+ComicSans.m */,
 				DE5925DD1B25F306005BD3A7 /* Images.xcassets */,
 				DE5925DB1B25F306005BD3A7 /* LaunchScreen.xib */,
+				DE9C44EC1B2F1E47001CB094 /* Fonts */,
 				DE5925E81B25F315005BD3A7 /* Supporting Files */,
 			);
 			path = Example;
@@ -150,6 +158,15 @@
 				DE5925DF1B25F306005BD3A7 /* main.m */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		DE9C44EC1B2F1E47001CB094 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				DE9C44ED1B2F1E47001CB094 /* Comic Sans MS Bold.ttf */,
+				DE9C44EE1B2F1E47001CB094 /* Comic Sans MS.ttf */,
+			);
+			path = Fonts;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -232,6 +249,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DE9C44EF1B2F1E47001CB094 /* Comic Sans MS Bold.ttf in Resources */,
+				DE9C44F01B2F1E47001CB094 /* Comic Sans MS.ttf in Resources */,
 				DE5925EC1B25F3B5005BD3A7 /* Images.xcassets in Resources */,
 				DE5925ED1B25F3B5005BD3A7 /* LaunchScreen.xib in Resources */,
 			);
@@ -261,6 +280,7 @@
 				DE40F3F51B25F4D4000BF45D /* NSDictionary+Poet.m in Sources */,
 				DE40F3FB1B25F4F6000BF45D /* NSAttributedString+Poet.m in Sources */,
 				DE5925EB1B25F3AE005BD3A7 /* main.m in Sources */,
+				DE9C44EB1B2F1E13001CB094 /* UIFont+ComicSans.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
